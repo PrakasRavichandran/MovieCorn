@@ -1,0 +1,19 @@
+@import '../../sass/variables';
+
+.person-list {
+  & h1 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+
+  & .row {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+
+    & .col-1,
+    .col-2 {
+      width: 50%;
+    }
+  }
+}

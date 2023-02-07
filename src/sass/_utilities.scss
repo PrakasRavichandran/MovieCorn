@@ -1,0 +1,24 @@
+.u-hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.u-lazy-img {
+  filter: blur(0);
+  -webkit-filter: blur(0);
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &--loading {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
+}
+
+.u-margin {
+  @include spacingMixins(margin);
+}
+
+.u-text-center {
+  text-align: center;
+}

@@ -1,0 +1,98 @@
+@import '../../sass/variables';
+
+.list {
+  list-style: none;
+
+  &-item {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+    background-color: $color-white;
+    border: 1px solid $color-gray-light;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    color: $color-black;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    border: 2px solid $color-white;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      border: 2px solid $color-primary;
+
+      & .list-item__title {
+        color: $color-primary;
+      }
+    }
+
+    &__index {
+      width: 2rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $color-gray;
+      text-align: center;
+      margin-left: 1rem;
+    }
+
+    &__img {
+      width: 5rem;
+      height: 7.5rem;
+      background-color: $color-gray;
+      border-radius: 5px;
+      object-fit: cover;
+
+      &.large {
+        width: 7rem;
+        height: 10rem;
+      }
+    }
+
+    &__title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: $color-black;
+      margin-bottom: 0.5rem;
+    }
+
+    &__subtitle {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: $color-gray;
+      margin-bottom: 0.5rem;
+    }
+
+    &__text {
+      display: block;
+      margin: 0.75rem 0;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      color: $color-black;
+    }
+
+    &__strong {
+      font-size: 1.6rem;
+      color: $color-primary;
+    }
+
+    & svg {
+      font-size: 1.2rem;
+      color: $color-primary;
+      margin-right: 0.5rem;
+    }
+
+    &__col--primary {
+      flex-basis: 100%;
+    }
+
+    &__col--secondary {
+      flex-basis: 15%;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

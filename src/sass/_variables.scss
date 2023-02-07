@@ -1,0 +1,31 @@
+$breakpoint-xs: 384px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+$color-primary: #fdc000;
+$color-secondary: #fdc000;
+$color-tertiary: #fdc000;
+$color-black: #fdfdfd;
+$color-gray: #595959;
+$color-gray-light: #1c212e;
+$color-white: #1c212e;
+
+$color-gradient: linear-gradient(
+  45deg,
+  rgba(
+      $color: $color-primary,
+      $alpha: 1,
+    )
+    0%,
+  rgba(
+      $color: $color-secondary,
+      $alpha: 1,
+    )
+    100%
+);
+
+$directions: (top, right, bottom, left, all);
+$spaces: (0.5, 2, 3, 4, auto);

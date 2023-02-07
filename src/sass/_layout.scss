@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+
+  @media only screen and (min-width: $breakpoint-xxl) {
+    max-width: 1320px;
+  }
+
+  @media only screen and (max-width: $breakpoint-xxl) {
+    max-width: 1140px;
+  }
+
+  @media only screen and (max-width: $breakpoint-xl) {
+    max-width: 960px;
+  }
+
+  @media only screen and (max-width: $breakpoint-lg) {
+    max-width: 720px;
+  }
+
+  @media only screen and (max-width: $breakpoint-md) {
+    max-width: 540px;
+  }
+
+  @media only screen and (max-width: $breakpoint-sm) {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+}
+
+.content {
+  margin-top: 6rem;
+  min-height: calc(100vh - 14rem);
+}
+
+.section {
+  margin: 5rem 0;
+}

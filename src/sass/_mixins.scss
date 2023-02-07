@@ -1,0 +1,21 @@
+@mixin spacingMixins($property) {
+  @each $direction in $directions {
+    @each $space in $spaces {
+      @if $direction == all {
+        &-#{$space} {
+          #{$property}: #{$space}rem;
+        }
+      } @else {
+        @if $space == auto {
+          &-#{$direction}-#{$space} {
+            #{$property}-#{$direction}: #{$space};
+          }
+        } @else {
+          &-#{$direction}-#{$space} {
+            #{$property}-#{$direction}: #{$space}rem;
+          }
+        }
+      }
+    }
+  }
+}

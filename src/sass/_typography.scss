@@ -1,0 +1,69 @@
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+  line-height: 1;
+
+  @media only screen and (max-width: $breakpoint-lg) {
+    font-size: 50%;
+  }
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+%button-base {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  font-size: 1.5rem;
+  color: $color-gray;
+  background-color: $color-white;
+  border-radius: 30px;
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+
+  &:hover {
+    color: $color-primary;
+    border: 2px solid $color-primary;
+  }
+}
+
+.button {
+  @extend %button-base;
+  border: 2px solid $color-gray;
+
+  &-pill {
+    @extend %button-base;
+    border: 2px solid $color-white;
+
+    &.active {
+      color: $color-white;
+      background: $color-gradient;
+
+      &:hover {
+        border: 2px solid $color-white;
+      }
+    }
+  }
+}
+
+.badge {
+  background-color: $color-gray-light;
+  border-radius: 50px;
+  padding: 0.25rem 1rem;
+  font-weight: 500;
+  font-size: 0.6em;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.section h1 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}

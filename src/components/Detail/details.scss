@@ -1,0 +1,178 @@
+@import '../../sass/variables';
+
+.details {
+  min-height: 50vh;
+
+  &-header {
+    & .header-backdrop {
+      position: relative;
+      width: 100%;
+      height: 36vw;
+      max-height: 62rem;
+      border-radius: 10px;
+      object-fit: cover;
+      z-index: -1;
+      background-color: $color-gray-light;
+
+      @media only screen and (max-width: $breakpoint-md) {
+        height: 30rem;
+      }
+    }
+
+    & .header-body {
+      color: $color-primary;
+      display: flex;
+      width: 90%;
+      margin: 0 auto;
+
+      @media only screen and (max-width: $breakpoint-md) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &__poster {
+        // min-width: 20rem;
+        // min-height: 30rem;
+        // max-height: 40rem;
+        width: 26rem;
+        height: 40rem;
+        margin-top: -20rem;
+        border-radius: 10px;
+        background-color: $color-gray-light;
+        object-fit: cover;
+
+        @media only screen and (max-width: $breakpoint-md) {
+          width: 20rem;
+          height: 30rem;
+        }
+      }
+
+      &__content {
+        flex-basis: 75%;
+        font-size: 1.4rem;
+        padding: 2rem;
+
+        @media only screen and (max-width: $breakpoint-md) {
+          text-align: center;
+        }
+
+        & h1 {
+          font-size: 3.6rem;
+          margin-bottom: 1.2rem;
+
+          @media only screen and (max-width: $breakpoint-md) {
+            font-size: 2.8rem;
+          }
+        }
+
+        & p {
+          line-height: 2rem;
+        }
+
+        &-fact {
+          color: $color-gray;
+          font-size: 1.4rem;
+          line-height: 2rem;
+          margin-bottom: 3rem;
+
+          & span {
+            color: #ffffff;
+            margin-right: 1.5rem;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+
+          & svg {
+            color: $color-primary ;
+            margin-right: 0.5rem;
+          }
+        }
+
+        &-actions {
+          display: flex;
+          align-items: center;
+
+          @media only screen and (max-width: $breakpoint-md) {
+            justify-content: center;
+          }
+
+          & .rating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-primary;
+            border-right: 1px solid $color-gray;
+            padding-right: 2.5rem;
+            margin-right: 2.5rem;
+
+            & svg {
+              font-size: 2rem;
+              margin-right: 1rem;
+            }
+
+            &-details {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              &__average {
+                font-size: 3.6rem;
+                font-weight: 700;
+              }
+
+              &__count {
+                font-size: 1.2rem;
+                color: $color-gray;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-main {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+
+    @media only screen and (max-width: $breakpoint-md) {
+      width: 100%;
+    }
+
+    & .section-title {
+      color: $color-primary;
+      font-size: 2.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    & p {
+      color: #ffffff;
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-overview {
+    & > p {
+      margin-bottom: 2rem;
+    }
+
+    &__credits {
+      & strong {
+        color: $color-primary;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &-metadata {
+    & strong {
+      margin-right: 1rem;
+    }
+  }
+}
