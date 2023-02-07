@@ -13,6 +13,7 @@
         } @else {
           &-#{$direction}-#{$space} {
             #{$property}-#{$direction}: #{$space}rem;
+            color: $color-primary ;
           }
         }
       }
