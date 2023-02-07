@@ -163,8 +163,9 @@
     }
 
     &__credits {
+      color: #ffffff;
       & strong {
-        color: #ffffff;
+        color: $color-primary;
         margin-right: 1rem;
       }
     }
