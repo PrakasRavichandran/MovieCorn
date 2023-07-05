@@ -6,7 +6,7 @@ Welcome to the MovieCorn 🎬 project! This app is built using React.js and util
 
 ## Demo
 
-![MovieCorn](./demo.jpej)
+![MovieCorn](./demo.jpeg)
 
 ## Features
 
